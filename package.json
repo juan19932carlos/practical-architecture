@@ -14,8 +14,8 @@
   },
   "scripts": {
     "prepare": "husky",
-    "lint": "pnpm lint:js && pnpm lint:py",
-    "lint:js": "biome check",
+    "lint": "pnpm lint:ts && pnpm lint:py",
+    "lint:ts": "biome check && pnpm -r --if-present typecheck",
     "lint:py": "uv run ruff check && uv run ruff format --check"
   }
 }

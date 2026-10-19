@@ -8,7 +8,7 @@ workspace "domain-driven-desing" "Allocation service from Architecture Patterns 
         customer = person "Customer" "Wants to buy furniture."
 
         system = softwareSystem "Allocation" "Allocates stock to customer orders." {
-            api = container "Allocation API" "Allocates stock to customer orders. Same service and contract in Python and JavaScript."
+            api = container "Allocation API" "Allocates stock to customer orders. Same service and contract in Python and TypeScript."
         }
 
         purchasing = softwareSystem "Purchasing" "Manages workflow for buying stock from suppliers."

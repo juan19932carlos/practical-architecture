@@ -1,6 +1,6 @@
 # Getting started
 
-Domain-driven design (DDD) workspace for JavaScript and Python. This page says how to set up the tools and build these docs.
+Domain-driven design (DDD) workspace for TypeScript and Python. This page says how to set up the tools and build these docs.
 
 ## Set up the tools
 
