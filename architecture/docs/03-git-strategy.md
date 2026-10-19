@@ -1,14 +1,12 @@
 # Git strategy
 
-`main` is the main branch. Every change reaches it through a pull request.
+`main` is the main branch. A step of the book reaches it through a pull request.
 
 ## Rules
 
-- Never commit to `main` directly. Treat it as untouchable.
-- Make each change on its own branch, cut from `main`.
-- Open a pull request to merge the branch into `main`.
+- Do each step of the book on its own branch, cut from `main`. Open a pull request to merge it into `main`.
+- A small change that is not part of a book step (docs, tooling, a typo) can go straight to `main`.
 - Tag a finished step on `main`. See the release strategy page for tag names and release notes.
-- A tag never moves.
 
 ## Branch names
 
@@ -31,5 +29,5 @@ Use [Conventional Commits](https://www.conventionalcommits.org/): `type(scope): 
 Git hooks run these checks. Husky installs the hooks when you run `pnpm install`.
 
 - `commit-msg`: commitlint checks the message.
-- `pre-commit`: `scripts/check-branch-name.sh` checks the branch name. Biome checks staged JavaScript. Ruff checks and format-checks Python.
+- `pre-commit`: `scripts/check-branch-name.sh` checks the branch name. Biome checks staged TypeScript. Ruff checks and format-checks Python.
 - Run all linters by hand with `pnpm lint`.
