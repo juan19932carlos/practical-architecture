@@ -1,0 +1,11 @@
+{
+  "name": "domain-driven-desing",
+  "private": true,
+  "packageManager": "pnpm@12.4.2",
+  "engines": {
+    "node": "24.16.0"
+  },
+  "devDependencies": {
+    "@formula-monks/renderizr": "github:FormulaMonks/renderizr#v2.5.0"
+  }
+}

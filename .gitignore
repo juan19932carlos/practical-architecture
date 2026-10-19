@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# JavaScript
+node_modules/
+dist/
+coverage/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# OS and editor
+.DS_Store
+.idea/
+.vscode/
+
+# Local notes
+.local/
+
+# Generated docs
+architecture/workspace.json
+architecture/site/
+structurizr-output/
+architecture/.renderizr-*/
+architecture/.structurizr/

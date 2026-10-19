@@ -1,0 +1,10 @@
+[tools]
+node = "24.16.0"
+pnpm = "12.4.2"
+python = "3.13.16"
+uv = "0.13.1"
+java = "temurin-21.0.12+101.0.LTS"
+"github:structurizr/cli" = "2025.11.09"
+
+[env]
+_.python.venv = { path = ".venv", create = true }
