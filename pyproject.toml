@@ -1,2 +1,5 @@
 [tool.uv.workspace]
 members = ["apps/*-py", "packages/*-py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

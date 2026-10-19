@@ -1,0 +1,4 @@
+scripts/check-branch-name.sh
+mise exec -- pnpm exec biome check --staged --no-errors-on-unmatched
+mise exec -- uv run ruff check
+mise exec -- uv run ruff format --check

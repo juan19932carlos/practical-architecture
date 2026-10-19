@@ -1,4 +1,4 @@
-# 2. Develop on main and tag each step
+# 2. Tag each step
 
 Date: 2026-10-19
 
@@ -12,7 +12,7 @@ The repo implements the steps of "Architecture Patterns with Python" twice, once
 
 ## Decision
 
-Develop on `main`. When a step is done, tag the commit and publish a GitHub release for that tag.
+When a step is done, tag the commit on `main` and publish a GitHub release for that tag. How changes reach `main` is in `architecture/docs/03-git-strategy.md`.
 
 - A step is one chapter of the book, or a few small chapters grouped together.
 - A step lands in both `apps/allocation-py` and `apps/allocation-js`, with its ADRs and the C4 model update in the same step.

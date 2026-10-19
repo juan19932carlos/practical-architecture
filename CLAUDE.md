@@ -6,6 +6,7 @@ Implements the steps of "Architecture Patterns with Python" as an API in both Py
 
 - Tool versions live in `mise.toml` and are pinned exact (Node, pnpm, Python, uv, Java, Structurizr CLI). Never use `latest`, `lts` or a range there. Run commands through mise (`mise exec -- <cmd>`) or from a shell where mise is active.
 - JavaScript: use `pnpm`. Never `npm`, `yarn` or `npx`.
+- Lint: Biome for JavaScript, Ruff for Python. `pnpm lint` runs both.
 - Python: use `uv` (`uv add`, `uv run`, `uv sync`). Never bare `pip`.
 - Python venv is `.venv/`, created by mise. It is git-ignored; do not commit it.
 - `allowBuilds` in `pnpm-workspace.yaml` denies the `esbuild` build script on purpose. Do not change it without asking.
@@ -54,6 +55,7 @@ Implements the steps of "Architecture Patterns with Python" as an API in both Py
 
 ## Releases
 
-- Git strategy and tag naming: `architecture/decisions/0002-develop-on-main-and-tag-each-step.md`.
+- Branches, pull requests, branch names, commit messages and the git hooks: `architecture/docs/03-git-strategy.md`. Never commit to `main` directly.
+- Tag naming: `architecture/decisions/0002-tag-each-step.md`.
 - Release notes and the checklist before a tag: `architecture/docs/02-release-strategy.md`.
-- Never move or delete a tag. Fixes go to `main`.
+- Never move or delete a tag. Fixes go to `main` through a pull request.
