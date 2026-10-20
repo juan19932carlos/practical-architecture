@@ -8,7 +8,7 @@ The Python API. Rules for this app on top of the root `CLAUDE.md`.
 
 ## Layout
 
-- Code lives in `allocation/`. Tests live in `tests/`.
+- Code lives in `allocation/`: `domain/`, `entrypoints/`. Tests live in `tests/`, in the same folders.
 - The FastAPI app is `allocation/entrypoints/fastapi_app.py`. Test it in-process with `fastapi.testclient.TestClient`. Never start the server in a test or a session.
 - The app has no build system, so it is not an installable package. Tests import it through `pythonpath`.
 

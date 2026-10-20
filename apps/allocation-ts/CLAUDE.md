@@ -9,7 +9,7 @@ The TypeScript API. Rules for this app on top of the root `CLAUDE.md`.
 
 ## Layout
 
-- Code and tests live together in `src/`. A test is `<name>.test.ts`.
+- Code and tests live together in `src/`, in folders: `domain/`, `entrypoints/`. A test is `<name>.test.ts`, next to the file it tests.
 - The web app is built by `buildApp()` in `src/entrypoints/fastify-app.ts`. `main.ts` starts it. Test it in-process with `app.inject()`. Never start the server in a test or a session.
 - `moduleResolution` is `Bundler`: import `./model`, with no extension.
 - `tsconfig.json` is strict. Do not loosen it.
