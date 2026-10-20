@@ -31,3 +31,11 @@ Git hooks run these checks. Husky installs the hooks when you run `pnpm install`
 - `commit-msg`: commitlint checks the message.
 - `pre-commit`: `scripts/check-branch-name.sh` checks the branch name. Biome checks staged TypeScript. Ruff checks and format-checks Python.
 - Run all linters by hand with `pnpm lint`.
+
+## Pull request description
+
+GitHub fills the pull request description from `.github/pull_request_template.md`. Keep its three sections: Summary, Evidence and Merge Danger.
+
+- Summary: show the change with the smallest view (pseudocode, call tree, file tree, diff or Mermaid). No preamble.
+- Evidence: show a before and after. Prefer a failing and a passing test run.
+- Merge Danger: say if the door is one-way or two-way, and name the blast radius.
