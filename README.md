@@ -5,3 +5,5 @@ Personal workspace that implements the steps of "Architecture Patterns with Pyth
 The patterns are not tied to Python, so each step is built as an API in two languages: Python and TypeScript. Other languages can follow the same steps. There is no frontend.
 
 The model, docs and decisions live in `architecture/`. See `architecture/docs/01-getting-started.md` to set up the tools and build the docs.
+
+The architecture site is published on GitHub Pages: https://juan19932carlos.github.io/practical-architecture/
