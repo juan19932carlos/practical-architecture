@@ -47,3 +47,27 @@ test("cannot allocate if skus do not match", () => {
   const differentSkuLine = new OrderLine("order-123", "EXPENSIVE-TOASTER", 10);
   expect(batch.canAllocate(differentSkuLine)).toBe(false);
 });
+
+test("can only deallocate allocated lines", () => {
+  const [batch, unallocatedLine] = makeBatchAndLine(
+    "DECORATIVE-TRINKET",
+    20,
+    2,
+  );
+  batch.deallocate(unallocatedLine);
+  expect(batch.availableQuantity).toBe(20);
+});
+
+test("deallocating an allocated line restores the available quantity", () => {
+  const [batch, line] = makeBatchAndLine("DECORATIVE-TRINKET", 20, 2);
+  batch.allocate(line);
+  batch.deallocate(line);
+  expect(batch.availableQuantity).toBe(20);
+});
+
+test("allocation is idempotent", () => {
+  const [batch, line] = makeBatchAndLine("ANGULAR-DESK", 20, 2);
+  batch.allocate(line);
+  batch.allocate(line);
+  expect(batch.availableQuantity).toBe(18);
+});
