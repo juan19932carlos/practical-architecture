@@ -30,3 +30,13 @@ run = "uv run pytest"
 description = "Run the TypeScript tests"
 dir = "apps/allocation-ts"
 run = "pnpm test"
+
+[tasks."serve:py"]
+description = "Start the Python API with reload"
+dir = "apps/allocation-py"
+run = "uv run uvicorn allocation.entrypoints.fastapi_app:app --reload"
+
+[tasks."serve:ts"]
+description = "Start the TypeScript API with reload"
+dir = "apps/allocation-ts"
+run = "pnpm exec tsx watch src/entrypoints/main.ts"

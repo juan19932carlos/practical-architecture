@@ -1,5 +1,8 @@
 [tool.uv]
 constraint-dependencies = [
+    "fastapi>=0.148.0",
+    "httpx>=0.28.1",
+    "uvicorn>=0.54.0",
     "sqlalchemy>=2.1.5",
     "pytest>=9.1.1",
     "ruff>=0.17.1",
