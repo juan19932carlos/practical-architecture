@@ -2,17 +2,12 @@
 
 <!-- One paragraph: what this PR does and why. No file lists, trees or diffs. -->
 
-## Evidence
+## Checklist
 
-- **Before:** <!-- failing test run, output or screenshot -->
-  **After:** <!-- passing test run, output or screenshot -->
-
-## Merge Danger
-
-**Door:** <!-- one-way or two-way -->
-
-<!-- optional: why -->
-
-**Blast Radius:** <!-- one word -->
-
-<!-- optional: what could break after the merge -->
+- [ ] Follows the book step (patterns, and DDD where the book uses it)
+- [ ] TDD: each test failed first, then passed
+- [ ] Python and TypeScript have the same tests and behavior
+- [ ] Architecture model (`architecture/workspace.dsl`) is up to date
+- [ ] Diagrams are up to date
+- [ ] Docs are up to date
+- [ ] A choice between options has an ADR
