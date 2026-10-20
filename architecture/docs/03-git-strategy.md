@@ -19,7 +19,7 @@ Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `build`, `ci`. They a
 
 ## Commit messages
 
-Use [Conventional Commits](https://www.conventionalcommits.org/): `type(scope): summary`. The scope is optional. Use `py` or `js` as the scope when a change touches one language only.
+Use [Conventional Commits](https://www.conventionalcommits.org/): `type(scope): summary`. The scope is optional. Use `py` or `ts` as the scope when a change touches one language only.
 
 - `feat(py): add Batch`
 - `docs: describe the git strategy`
