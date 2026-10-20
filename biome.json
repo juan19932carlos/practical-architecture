@@ -6,7 +6,7 @@
     "useIgnoreFile": true
   },
   "files": {
-    "includes": ["apps/*-js/**", "packages/*-js/**"]
+    "includes": ["apps/*-ts/**", "packages/*-ts/**"]
   },
   "formatter": {
     "indentStyle": "space",

@@ -1,6 +1,6 @@
 # Getting started
 
-Domain-driven design (DDD) workspace for JavaScript and Python. This page says how to set up the tools and build these docs.
+Domain-driven design (DDD) workspace for TypeScript and Python. This page says how to set up the tools and build these docs.
 
 ## Set up the tools
 
@@ -13,11 +13,10 @@ pnpm install
 
 ## Build the docs
 
-Structurizr turns the model into JSON. Renderizr turns the JSON into a site.
+Structurizr turns the model into JSON. Renderizr turns the JSON into a site in `architecture/site/`.
 
 ```
-structurizr.sh export -workspace architecture/workspace.dsl -format json -output architecture
-pnpm exec renderizr architecture/workspace.json --single-file -o architecture/site
+mise run docs:build
 ```
 
 Run the export again after you change the model, the docs or the decisions. Otherwise the site shows the old content.

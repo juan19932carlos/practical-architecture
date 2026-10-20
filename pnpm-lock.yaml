@@ -182,7 +182,7 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
 
-  apps/allocation-js:
+  apps/allocation-ts:
     dependencies:
       drizzle-orm:
         specifier: ^0.45.4

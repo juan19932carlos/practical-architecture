@@ -5,7 +5,7 @@ Each step of the book ends with a tag and a GitHub release. This page says what 
 ## What a tag means
 
 - A tag marks one finished step: the code, the tests, the ADRs and the C4 model all agree.
-- Both APIs (`apps/allocation-py` and `apps/allocation-js`) pass their tests at the tag.
+- Both APIs (`apps/allocation-py` and `apps/allocation-ts`) pass their tests at the tag.
 - A tag never moves. Fixes go to `main` and appear in the next tag.
 
 ## Tag names
@@ -26,7 +26,7 @@ One or two sentences: the book chapter(s) and the idea they teach.
 ## What was done
 
 - Python: what was added.
-- JavaScript: what was added.
+- TypeScript: what was added.
 
 ## What changed since the previous tag
 
@@ -44,7 +44,7 @@ One or two sentences: the book chapter(s) and the idea they teach.
 ## How to run
 
 - Python: the commands to run its tests.
-- JavaScript: the commands to run its tests.
+- TypeScript: the commands to run its tests.
 ```
 
 ## Checklist before a tag

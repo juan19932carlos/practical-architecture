@@ -8,3 +8,25 @@ java = "temurin-21.0.12+101.0.LTS"
 
 [env]
 _.python.venv = { path = ".venv", create = true }
+
+[tasks."docs:edit"]
+description = "Open the Renderizr editor on the architecture model (server on port 7341)"
+env = { STRUCTURIZR_CLI = "structurizr.sh" }
+run = "pnpm exec renderizr edit architecture/workspace.dsl"
+
+[tasks."docs:build"]
+description = "Export the model and build the architecture site into architecture/site"
+run = [
+  "structurizr.sh export -workspace architecture/workspace.dsl -format json -output architecture",
+  "pnpm exec renderizr architecture/workspace.json --single-file -o architecture/site",
+]
+
+[tasks."test:py"]
+description = "Run the Python tests"
+dir = "apps/allocation-py"
+run = "uv run pytest"
+
+[tasks."test:ts"]
+description = "Run the TypeScript tests"
+dir = "apps/allocation-ts"
+run = "pnpm test"

@@ -1,5 +1,5 @@
 packages:
-  - "apps/*-js"
-  - "packages/*-js"
+  - "apps/*-ts"
+  - "packages/*-ts"
 allowBuilds:
   esbuild: false
