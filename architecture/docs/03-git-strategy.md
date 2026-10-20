@@ -36,6 +36,6 @@ Git hooks run these checks. Husky installs the hooks when you run `pnpm install`
 
 GitHub fills the pull request description from `.github/pull_request_template.md`. Keep its three sections: Summary, Evidence and Merge Danger.
 
-- Summary: show the change with the smallest view (pseudocode, call tree, file tree, diff or Mermaid). No preamble.
+- Summary: one paragraph that says what the PR does and why. No file lists, folder trees or code diffs. No preamble.
 - Evidence: show a before and after. Prefer a failing and a passing test run.
 - Merge Danger: say if the door is one-way or two-way, and name the blast radius.

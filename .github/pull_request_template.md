@@ -1,6 +1,6 @@
 ## Summary
 
-<!-- Smallest view that makes the point: pseudocode, call tree, file tree, diff sketch or Mermaid. -->
+<!-- One paragraph: what this PR does and why. No file lists, trees or diffs. -->
 
 ## Evidence
 
